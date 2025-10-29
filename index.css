@@ -7,11 +7,13 @@
 }
 
 body {
+  font-family: 'Outfit', sans-serif;
   font-size: 16px;
   color: #5f564d;
   display: flex;
   justify-content: center;
   align-items: center;
+  line-height: 150%;
 }
 
 img {
@@ -87,5 +89,47 @@ td {
   color: #854632;
 }
 
-@media (min-width: 320px) {
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+tr {
+  border-bottom: 0.05px solid #5f564d;
+}
+th,
+td {
+  text-align: center;
+  padding: 0.5rem 0;
+}
+
+th {
+  font-weight: 400;
+  line-height: 100%;
+}
+td,
+strong {
+  font-weight: 700;
+  text-align: left;
+}
+
+@media (min-width: 376px) and (max-width: 992px) {
+  body {
+    background-color: #F3E5D7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8rem 3rem;
+  }
+
+  img, #container, .heading, #preptime, #ingredients, #instructions, #nutrition {
+    max-width: 536px;
+    width: 100%;
+    border-radius: 12px;
+  }
+
+  #container{
+    background-color: white;
+    padding: 2.5rem;
+  }
 }
