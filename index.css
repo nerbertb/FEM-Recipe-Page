@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  color: #5f564d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+img {
+  max-width: 375px;
+  width: 100%;
+  display: block;
+}
+
+.content {
+  padding: 2.5rem 2rem;
+}
+
+h1,
+h2 {
+  font-size: 2.2rem;
+  margin-bottom: 1.5rem;
+  font-family: 'Young Serif', serif;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 100%;
+}
+
+.heading {
+  max-width: 311px;
+  width: 100%;
+  text-align: start;
+}
+
+#preptime,
+#ingredients,
+#instructions,
+#nutrition {
+  margin: 2rem 0;
+  max-width: 311px;
+  width: 100%;
+}
+
+#preptime {
+  background-color: #fff7fb;
+  padding: 1.5rem;
+}
+
+#preptime h3 {
+  color: #7a284e;
+  margin-bottom: 1rem;
+}
+
+strong {
+  color: #5f564d;
+}
+
+ul {
+  list-style: inside;
+  padding-left: 1rem;
+  margin-bottom: 2rem;
+}
+
+ol {
+  padding-left: 1rem;
+  margin-bottom: 2rem;
+}
+
+#preptime li::marker {
+  color: #7a284e;
+}
+
+li::marker {
+  color: #854632;
+}
+
+h2,
+td {
+  color: #854632;
+}
+
+@media (min-width: 320px) {
+}
