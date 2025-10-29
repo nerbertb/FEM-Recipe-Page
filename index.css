@@ -37,9 +37,9 @@ h2 {
 }
 
 .heading {
-  max-width: 311px;
+  min-width: 311px;
+  max-width: 656px;
   width: 100%;
-  text-align: start;
 }
 
 #preptime,
@@ -47,7 +47,8 @@ h2 {
 #instructions,
 #nutrition {
   margin: 2rem 0;
-  max-width: 311px;
+  min-width: 311px;
+  max-width: 656px;
   width: 100%;
 }
 
@@ -59,6 +60,7 @@ h2 {
 #preptime h3 {
   color: #7a284e;
   margin-bottom: 1rem;
+  font-size: 20px;
 }
 
 strong {
@@ -115,21 +117,82 @@ strong {
 
 @media (min-width: 376px) and (max-width: 992px) {
   body {
-    background-color: #F3E5D7;
+    background-color: #f3e5d7;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 8rem 3rem;
+    line-height: 150%;
+    font-size: 16px;
   }
 
-  img, #container, .heading, #preptime, #ingredients, #instructions, #nutrition {
+  img {
+    margin-bottom: 2.5rem;
+  }
+
+  img,
+  #container,
+  .heading,
+  #preptime,
+  #ingredients,
+  #instructions,
+  #nutrition {
     max-width: 536px;
     width: 100%;
     border-radius: 12px;
   }
 
-  #container{
+  #container {
     background-color: white;
     padding: 2.5rem;
+  }
+
+  #preptime {
+    padding: 1.5rem;
+  }
+
+  .content {
+    padding: 0;
+  }
+}
+
+@media (min-width: 993px) {
+  body {
+    background-color: #f3e5d7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8rem 3rem;
+    line-height: 150%;
+    font-size: 18px;
+  }
+
+  img {
+    margin-bottom: 2.5rem;
+  }
+
+  img,
+  #container,
+  .heading,
+  #preptime,
+  #ingredients,
+  #instructions,
+  #nutrition {
+    max-width: 656px;
+    width: 100%;
+    border-radius: 12px;
+  }
+
+  #container {
+    background-color: white;
+    padding: 2.5rem;
+  }
+
+  #preptime {
+    padding: 1.5rem;
+  }
+
+  .content {
+    padding: 0;
   }
 }
